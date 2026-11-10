@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinin Engineering Solution | Engineering Excellence & Industrial Supply</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0B2545',
+                            darkBlue: '#134074',
+                            orange: '#FF6B00',
+                            orangeHover: '#E05D00',
+                            lightBg: '#EEF4F8',
+                            surface: '#FFFFFF',
+                            slateText: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+        .gear-spin {
+            animation: spin 20s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 30px -5px rgba(11, 37, 69, 0.08);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-orange selection:text-white">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-brand-navy text-white text-xs py-2 px-4 border-b border-brand-darkBlue/40">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-orange"></i> Motijheel, Dhaka-1000, Bangladesh</span>
+                <span class="hidden sm:inline-flex items-center gap-1.5"><i class="fa-solid fa-phone text-brand-orange"></i> 01815592256</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 bg-emerald-500/20 text-emerald-300 text-[11px] px-2 py-0.5 rounded-full border border-emerald-500/30">
+                    <i class="fa-solid fa-shield-halved"></i> Govt Registered & Compliant Entity
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Branding -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="relative w-12 h-12 flex items-center justify-center">
+                        <!-- Custom SVG Logo Matching Prompt Artwork -->
+                        <svg class="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer Blue Gear Fragment -->
+                            <path d="M50 10 C27.9 10 10 27.9 10 50 C10 72.1 27.9 90 50 90 C56.5 90 62.6 88.4 68 85.6 L60 76.8 C56.9 78.8 53.6 80 50 80 C33.4 80 20 66.6 20 50 C20 33.4 33.4 20 50 20 C62.8 20 73.6 28 78 39.2 L87.4 33.2 C81 19.4 66.6 10 50 10 Z" fill="#0B2545"/>
+                            <path d="M42 12 L50 4 L58 12 M12 42 L4 50 L12 58 M12 65 L4 73 L17 81" stroke="#0B2545" stroke-width="4" stroke-linecap="round"/>
+                            <!-- Orange Swoosh Inner Ring -->
+                            <path d="M30 45 C30 33.9 38.9 25 50 25 C61.1 25 70 33.9 70 45 C70 56.1 61.1 65 50 65 C45 65 40 63 36 60 L28 66 C34 71 42 75 50 75 C66.5 75 80 61.5 80 45 C80 28.5 66.5 15 50 15 C33.5 15 20 28.5 20 45 L30 45 Z" fill="#FF6B00"/>
+                            <!-- Drill Icon Center -->
+                            <path d="M48 35 H62 V40 L56 46 V58 H50 V46 L48 40 Z" fill="#0B2545"/>
+                            <path d="M53 58 H57 V70 H53 Z" fill="#134074"/>
+                            <path d="M62 36 L68 36 L68 39 L62 39 Z" fill="#FF6B00"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-extrabold tracking-tight text-brand-navy leading-none">SININ</span>
+                        <span class="block text-xs font-bold text-brand-orange tracking-wider uppercase mt-1">Engineering Solution</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="#home" class="hover:text-brand-orange transition-colors">Home</a>
+                    <a href="#about" class="hover:text-brand-orange transition-colors">About Us</a>
+                    <a href="#services" class="hover:text-brand-orange transition-colors">Services</a>
+                    <a href="#documents" class="hover:text-brand-orange transition-colors">Govt Documents</a>
+                    <a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <button onclick="toggleEditModal()" class="inline-flex items-center gap-2 bg-slate-100 text-brand-navy px-3.5 py-2 rounded-lg text-xs font-bold hover:bg-slate-200 transition">
+                        <i class="fa-solid fa-pen-to-square text-brand-orange"></i> Edit Docs Info
+                    </button>
+                    <a href="#contact" class="inline-flex items-center gap-2 bg-brand-orange text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-md hover:bg-brand-orangeHover transition transform active:scale-95">
+                        <i class="fa-solid fa-paper-plane"></i> Get a Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-orange">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-orange">About Us</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-orange">Services</a>
+            <a href="#documents" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-orange">Govt Documents</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-base font-semibold text-slate-800 hover:text-brand-orange">Contact</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+                <button onclick="toggleEditModal(); toggleMobileMenu();" class="w-full text-center bg-slate-100 text-brand-navy py-2.5 rounded-lg text-sm font-bold">
+                    <i class="fa-solid fa-pen-to-square text-brand-orange"></i> Edit Government Docs Info
+                </button>
+                <a href="#contact" onclick="toggleMobileMenu()" class="w-full text-center bg-brand-orange text-white py-2.5 rounded-lg text-sm font-bold">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-brand-navy via-brand-darkBlue to-slate-900 text-white overflow-hidden py-20 lg:py-28">
+        <!-- Abstract Background Tech Overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#FF6B00_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-orange text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-gears gear-spin text-sm"></i> Professional Engineering & Supply Partner
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Engineering Excellence & <span class="text-brand-orange">Technical Solutions</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
+                        Sinin Engineering Solution is a trusted provider of industrial engineering services, specialized toolings, equipment sourcing, and retail & wholesale technical trading in Bangladesh.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#services" class="w-full sm:w-auto bg-brand-orange hover:bg-brand-orangeHover text-white px-8 py-3.5 rounded-xl font-bold text-base shadow-lg shadow-brand-orange/30 transition transform hover:-translate-y-0.5 text-center">
+                            Explore Services <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#documents" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-3.5 rounded-xl font-semibold text-base backdrop-blur-sm transition text-center">
+                            <i class="fa-solid fa-file-contract text-brand-orange mr-2"></i> View Legal Documents
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">100%</span>
+                            <span class="text-xs text-slate-400">Govt Compliant</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">Motijheel</span>
+                            <span class="text-xs text-slate-400">Commercial Hub</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">Full-Range</span>
+                            <span class="text-xs text-slate-400">Supply & Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Illustration Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md custom-shadow">
+                        <div class="absolute -top-4 -right-4 bg-brand-orange text-white w-14 h-14 rounded-full flex items-center justify-center font-bold shadow-lg">
+                            <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Government Registered</h3>
+                        <p class="text-xs text-slate-300 mb-6">Fully certified entity operating under National Board of Revenue & DSCC laws.</p>
+                        
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center justify-between p-3 rounded-lg bg-brand-navy/60 border border-white/10">
+                                <span class="text-slate-300"><i class="fa-solid fa-id-card text-brand-orange mr-2"></i> BIN Reg #</span>
+                                <span class="font-mono text-white font-bold" id="hero-bin-display">006287637-0202</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 rounded-lg bg-brand-navy/60 border border-white/10">
+                                <span class="text-slate-300"><i class="fa-solid fa-file-invoice text-brand-orange mr-2"></i> e-Trade License</span>
+                                <span class="font-mono text-white font-bold" id="hero-lic-display">TRAD/DSCC/000033/2024</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 rounded-lg bg-brand-navy/60 border border-white/10">
+                                <span class="text-slate-300"><i class="fa-solid fa-building text-brand-orange mr-2"></i> e-TIN Certificate</span>
+                                <span class="font-mono text-white font-bold" id="hero-tin-display">846173743066</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/10 text-center">
+                            <a href="#documents" class="text-xs font-semibold text-brand-orange hover:underline">Verify Legal Documents & Certificates &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-orange font-extrabold text-xs uppercase tracking-wider bg-brand-orange/10 px-3 py-1 rounded-full">Who We Are</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">About Sinin Engineering Solution</h2>
+                <div class="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base">
+                    Delivering top-tier industrial machinery, tools, and technical solutions tailored for commercial enterprises and industrial projects across Bangladesh.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Founder Profile / Proprietor Info -->
+                <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-orange/10 rounded-bl-full -z-0"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-20 h-20 rounded-full bg-brand-navy text-white flex items-center justify-center font-bold text-2xl border-4 border-brand-orange shadow">
+                                MR
+                            </div>
+                            <div>
+                                <span class="text-xs uppercase font-extrabold text-brand-orange tracking-wider">Proprietor & Founder</span>
+                                <h3 class="text-2xl font-bold text-brand-navy" id="display-owner-name">MD. RUHUL AMIN</h3>
+                                <p class="text-xs text-slate-500 font-medium">Business Owner & Technical Director</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 text-sm text-slate-700">
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1 text-brand-orange"><i class="fa-solid fa-briefcase"></i></div>
+                                <div>
+                                    <strong class="block text-brand-navy text-xs uppercase">Entity Structure</strong>
+                                    <span id="display-ownership-type">Proprietorship</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1 text-brand-orange"><i class="fa-solid fa-chart-line"></i></div>
+                                <div>
+                                    <strong class="block text-brand-navy text-xs uppercase">Economic Activity</strong>
+                                    <span id="display-economic-activity">Technical Engineering Services, Retail & Wholesale Trading</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1 text-brand-orange"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <strong class="block text-brand-navy text-xs uppercase">Registered Office Address</strong>
+                                    <span id="display-office-address">9/A, Toynbee Circular Road, Motijheel, Commercial Area, Motijheel PS, Dhaka-1000, Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Company Overview -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="text-2xl font-bold text-brand-navy">Empowering Industry with Precision & Reliability</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Sinin Engineering Solution was established with a commitment to high standards, offering full-spectrum engineering procurement, equipment sourcing, and maintenance services. Based in Motijheel—the financial and commercial center of Dhaka—we serve clients with complete government authorization and regulatory transparency.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-brand-orange/30 transition">
+                            <div class="w-10 h-10 rounded-lg bg-brand-orange/10 text-brand-orange flex items-center justify-center font-bold mb-3">
+                                <i class="fa-solid fa-check-double"></i>
+                            </div>
+                            <h4 class="font-bold text-brand-navy mb-1">Quality Guaranteed</h4>
+                            <p class="text-xs text-slate-500">All tools and supply equipment pass rigorous standard checks for industrial safety.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-brand-orange/30 transition">
+                            <div class="w-10 h-10 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center font-bold mb-3">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h4 class="font-bold text-brand-navy mb-1">Authentic Sourcing</h4>
+                            <p class="text-xs text-slate-500">Official distributor & retail supplier for specialized engineering components.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-brand-lightBg border border-brand-darkBlue/10 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-shield-check text-2xl text-brand-orange"></i>
+                            <div>
+                                <h5 class="text-xs font-bold uppercase text-brand-navy">Need Official Verification?</h5>
+                                <p class="text-xs text-slate-600">All tax and city corporation documents are updated for FY 2026-2027.</p>
+                            </div>
+                        </div>
+                        <a href="#documents" class="text-xs font-bold text-brand-orange hover:underline whitespace-nowrap">View Documents</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-orange font-extrabold text-xs uppercase tracking-wider bg-brand-orange/10 px-3 py-1 rounded-full">Core Offerings</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">Engineering & Supply Services</h2>
+                <div class="w-16 h-1 bg-brand-orange mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base">
+                    Comprehensive technical solutions designed for contractors, manufacturing units, and commercial developments.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-orange/40 hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-navy text-brand-orange flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition transform">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Industrial Tooling & Equipment</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Supply of heavy-duty power drills, hand tools, industrial machinery components, and precision equipment.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-orange">
+                        <span>Supply & Procurement</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-orange/40 hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-navy text-brand-orange flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition transform">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Retail & Wholesale Trading</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Bulk distribution of technical items, hardware solutions, spare parts, and engineering raw materials.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-orange">
+                        <span>Wholesale & Retail</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-orange/40 hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-navy text-brand-orange flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition transform">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Technical Solutions & Support</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            On-demand technical consultation, machine maintenance advisory, and engineering process optimizations.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-orange">
+                        <span>Consultancy</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-orange/40 hover:shadow-xl transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-navy text-brand-orange flex items-center justify-center text-2xl font-bold mb-6 group-hover:scale-110 transition transform">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Office & Industrial Supplies</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Official supply partner services for commercial enterprises, workshops, and infrastructure works.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-orange">
+                        <span>Contracting</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Documents & Compliance Section (Interactive + Live Dynamic Editable State) -->
+    <section id="documents" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-orange font-extrabold text-xs uppercase tracking-wider bg-brand-orange/10 px-3 py-1 rounded-full">Legal Compliance</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">Government Documents & Verification</h2>
+                    <p class="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+                        Official certificates registered with the Government of the People's Republic of Bangladesh, National Board of Revenue, and Dhaka South City Corporation.
+                    </p>
+                </div>
+                <div class="mt-6 md:mt-0 flex items-center gap-3">
+                    <button onclick="toggleEditModal()" class="bg-brand-navy text-white hover:bg-brand-darkBlue px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 transition shadow">
+                        <i class="fa-solid fa-pen-to-square text-brand-orange"></i> Edit Document Data
+                    </button>
+                    <button onclick="resetDocData()" class="bg-slate-100 text-slate-700 hover:bg-slate-200 px-3 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-1 transition" title="Reset to defaults">
+                        <i class="fa-solid fa-rotate-left"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex border-b border-slate-200 mb-8 overflow-x-auto">
+                <button id="tab-btn-trade" onclick="switchDocTab('trade')" class="py-3 px-6 font-bold text-sm border-b-2 border-brand-orange text-brand-orange whitespace-nowrap focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-certificate"></i> e-Trade License
+                </button>
+                <button id="tab-btn-bin" onclick="switchDocTab('bin')" class="py-3 px-6 font-bold text-sm border-b-2 border-transparent text-slate-500 hover:text-brand-navy whitespace-nowrap focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-receipt"></i> BIN Certificate (Mushak-2.3)
+                </button>
+                <button id="tab-btn-tin" onclick="switchDocTab('tin')" class="py-3 px-6 font-bold text-sm border-b-2 border-transparent text-slate-500 hover:text-brand-navy whitespace-nowrap focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-id-card"></i> TIN Certificate
+                </button>
+            </div>
+
+            <!-- TAB 1: e-TRADE LICENSE -->
+            <div id="tab-content-trade" class="doc-tab-content block">
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 custom-shadow">
+                    
+                    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pb-6 border-b border-slate-200 gap-4">
+                        <div>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded font-bold mb-2">Dhaka South City Corporation</span>
+                            <h3 class="text-2xl font-bold text-brand-navy">E-Trade License (ই-ট্রেড লাইসেন্স)</h3>
+                            <p class="text-xs text-slate-500 mt-1">Issued under Local Government (City Corporation) Act, 2009 (Section 84)</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-slate-500 block">License No:</span>
+                            <span class="font-mono text-lg font-extrabold text-brand-orange" id="doc-trade-no">TRAD/DSCC/000033/2024</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 text-sm">
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Entity Name</span>
+                            <span class="font-bold text-slate-800 text-base" id="doc-trade-entity">সিনিন ইঞ্জিনিয়ারিং সলিউশন</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Owner Name</span>
+                            <span class="font-bold text-slate-800 text-base" id="doc-trade-owner">মোঃ রুহুল আমিন</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Business Nature</span>
+                            <span class="font-semibold text-slate-800" id="doc-trade-nature">সরবরাহকারী (অফিস) / অন্যান্য-একক</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Issue Date</span>
+                            <span class="font-semibold text-slate-800" id="doc-trade-issue">07/07/2026</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Validity Period</span>
+                            <span class="font-semibold text-emerald-600" id="doc-trade-validity">Valid till June 30, 2027</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">NID / Passport No</span>
+                            <span class="font-mono font-semibold text-slate-800" id="doc-trade-nid">3701711263</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 md:col-span-2">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Business Address</span>
+                            <span class="font-medium text-slate-800" id="doc-trade-address">৯/এ, টয়েনবি সার্কুলার রোড, মতিঝিল, ঢাকা-১০০০</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Total Fee Paid</span>
+                            <span class="font-bold text-slate-800" id="doc-trade-fee">BDT 7,075.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Certificate Mock Preview Footer -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-qrcode text-3xl text-brand-navy"></i>
+                            <div>
+                                <strong class="text-slate-700">Digital System Certificate</strong>
+                                <p>Verified by Dhaka South City Corporation Revenue Dept (Zone-2 Khilgaon)</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p>Contact Phone: <span class="font-semibold text-slate-700" id="doc-trade-phone">01815592256</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TAB 2: BIN CERTIFICATE -->
+            <div id="tab-content-bin" class="doc-tab-content hidden">
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 custom-shadow">
+                    
+                    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pb-6 border-b border-slate-200 gap-4">
+                        <div>
+                            <span class="inline-block bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded font-bold mb-2">National Board of Revenue (NBR)</span>
+                            <h3 class="text-2xl font-bold text-brand-navy">VAT Registration Certificate (Mushak-2.3)</h3>
+                            <p class="text-xs text-slate-500 mt-1">Value Added Tax and Supplementary Duty Act, 2012 (Act No. 47 of 2012)</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-slate-500 block">BIN Number:</span>
+                            <span class="font-mono text-xl font-extrabold text-brand-orange" id="doc-bin-no">006287637-0202</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 text-sm">
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Name of Entity</span>
+                            <span class="font-bold text-slate-800 text-base" id="doc-bin-entity">SININ ENGINEERING SOLUTION</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Commissionerate</span>
+                            <span class="font-semibold text-slate-800">Customs, Excise & VAT Commissionerate, Dhaka (South)</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Division</span>
+                            <span class="font-semibold text-slate-800">Motijheel Division</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Associated e-TIN</span>
+                            <span class="font-mono font-bold text-slate-800" id="doc-bin-etin">846173743066</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Issue Date</span>
+                            <span class="font-semibold text-slate-800" id="doc-bin-issue">08/08/2024</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Ownership Type</span>
+                            <span class="font-semibold text-slate-800" id="doc-bin-ownership">Proprietorship</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 md:col-span-2">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Registered Entity Address</span>
+                            <span class="font-medium text-slate-800" id="doc-bin-address">9/A, Toynbee Circular Road, Motijheel, Comm. Area, Motijheel PS, Dhaka-1000, Bangladesh</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Economic Activity</span>
+                            <span class="font-semibold text-slate-800" id="doc-bin-activity">Services, Retail/Wholesale Trading</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                        <span>System Generated Mushak-2.3 Certificate</span>
+                        <span class="text-emerald-600 font-bold"><i class="fa-solid fa-circle-check"></i> Active & Verified</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TAB 3: TIN CERTIFICATE -->
+            <div id="tab-content-tin" class="doc-tab-content hidden">
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 custom-shadow">
+                    
+                    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pb-6 border-b border-slate-200 gap-4">
+                        <div>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2.5 py-1 rounded font-bold mb-2">National Board of Revenue</span>
+                            <h3 class="text-2xl font-bold text-brand-navy">Taxpayer's Identification Number (TIN) Certificate</h3>
+                            <p class="text-xs text-slate-500 mt-1">Income Tax Ordinance, 1984</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs text-slate-500 block">TIN Number:</span>
+                            <span class="font-mono text-xl font-extrabold text-brand-orange" id="doc-tin-no">846173743066</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 text-sm">
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Taxpayer Name</span>
+                            <span class="font-bold text-slate-800 text-base" id="doc-tin-taxpayer">MD. RUHUL AMIN</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Taxes Circle & Zone</span>
+                            <span class="font-semibold text-slate-800" id="doc-tin-circle">Taxes Circle-013 (Salary), Taxes Zone Narayanganj</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Registration Date</span>
+                            <span class="font-semibold text-slate-800" id="doc-tin-date">October 25, 2016</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Status</span>
+                            <span class="font-semibold text-slate-800">Individual</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 md:col-span-2">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Current Address</span>
+                            <span class="font-medium text-slate-800" id="doc-tin-address">BASA NO-01, ROAD NO-11, Dakhin Banosri, Rampura, Dhaka</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-100 md:col-span-3">
+                            <span class="text-xs text-slate-400 font-bold uppercase block">Permanent Address</span>
+                            <span class="font-medium text-slate-800" id="doc-tin-perm-address">Village: Mahatab Nagor, Post Office: Hasnabad, Dohar, Dhaka, PO: 1321</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                        <span>Issued by Deputy Commissioner of Taxes, Taxes Circle-013 (Salary)</span>
+                        <span class="text-emerald-600 font-bold"><i class="fa-solid fa-check"></i> System Authenticated</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brand-orange font-extrabold text-xs uppercase tracking-wider bg-white/10 px-3 py-1 rounded-full">Contact Us</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold">Get In Touch With Our Technical Team</h2>
+                    <p class="text-slate-300 text-sm sm:text-base">
+                        Have a request for quotation, equipment inquiry, or technical service consultation? Send us a message and our team will get back to you promptly.
+                    </p>
+
+                    <div class="space-y-4 pt-4 text-sm">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-brand-orange text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <strong class="block font-bold text-white">Office Location</strong>
+                                <span class="text-slate-300" id="contact-address-display">9/A, Toynbee Circular Road, Motijheel Commercial Area, Dhaka-1000, Bangladesh</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-brand-orange text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong class="block font-bold text-white">Direct Phone / Mobile</strong>
+                                <span class="text-slate-300" id="contact-phone-display">01815592256</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                            <div class="w-10 h-10 rounded-lg bg-brand-orange text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <strong class="block font-bold text-white">Operating Hours</strong>
+                                <span class="text-slate-300">Saturday – Thursday: 9:00 AM – 7:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-7 bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-brand-navy mb-2">Send an Inquiry / Request Quote</h3>
+                    <p class="text-xs text-slate-500 mb-6">Fill out the details below and specify your engineering supply requirements.</p>
+
+                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Full Name</label>
+                                <input type="text" required placeholder="e.g. Tanvir Hossain" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-orange text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Company / Organization</label>
+                                <input type="text" placeholder="e.g. Apex Industrial Construction" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-orange text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Phone Number</label>
+                                <input type="tel" required placeholder="017XXXXXXXX" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-orange text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Email Address</label>
+                                <input type="email" placeholder="name@company.com" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-orange text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Required Service / Products</label>
+                            <select class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-orange text-sm text-slate-700">
+                                <option>Industrial Tooling & Power Drills</option>
+                                <option>Retail / Wholesale Tooling Order</option>
+                                <option>Technical Maintenance Consultancy</option>
+                                <option>General Contracting Sourcing</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Message Details</label>
+                            <textarea rows="4" required placeholder="Specify tool requirements, quantities, or service specifications..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-brand-orange text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-orange hover:bg-brand-orangeHover text-white py-3.5 rounded-xl font-bold text-sm shadow-md transition">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+
+                    <div id="form-success-msg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-medium border border-emerald-200">
+                        <i class="fa-solid fa-circle-check text-emerald-600 mr-2 text-sm"></i> Thank you! Your message has been logged. Our representative will contact you shortly.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-extrabold text-white">SININ ENGINEERING SOLUTION</span>
+                <span>— All Rights Reserved.</span>
+            </div>
+            <div>
+                <span>BIN: <strong class="text-white" id="footer-bin">006287637-0202</strong> | Trade Lic: <strong class="text-white" id="footer-lic">TRAD/DSCC/000033/2024</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EDITABLE GOVERNMENT DOCUMENTS MODAL (Allows dynamic update to local state/storage) -->
+    <div id="edit-modal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white text-slate-800 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+            
+            <div class="p-6 bg-brand-navy text-white flex items-center justify-between sticky top-0 z-10">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-pen-to-square text-brand-orange"></i>
+                    <h3 class="font-bold text-lg">Edit Government Documents Data</h3>
+                </div>
+                <button onclick="toggleEditModal()" class="text-slate-300 hover:text-white p-2">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <form onsubmit="saveDocData(event)" class="p-6 space-y-6">
+                <p class="text-xs text-slate-500 border-b border-slate-100 pb-3">
+                    Update any official compliance fields below. Changes will immediately reflect across the site and persist in local web storage.
+                </p>
+
+                <!-- Proprietor & Office Info -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-extrabold text-brand-navy uppercase tracking-wider">Proprietor & Office Info</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">Owner Name</label>
+                            <input type="text" id="input-owner-name" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">Phone Number</label>
+                            <input type="text" id="input-phone" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-bold text-slate-600">Registered Office Address</label>
+                            <input type="text" id="input-address" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trade License Info -->
+                <div class="space-y-3 pt-3 border-t border-slate-100">
+                    <h4 class="text-xs font-extrabold text-brand-navy uppercase tracking-wider">e-Trade License Details</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">Trade License No</label>
+                            <input type="text" id="input-trade-no" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">NID Number</label>
+                            <input type="text" id="input-trade-nid" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">Issue Date</label>
+                            <input type="text" id="input-trade-issue" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">Validity Period</label>
+                            <input type="text" id="input-trade-validity" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BIN Details -->
+                <div class="space-y-3 pt-3 border-t border-slate-100">
+                    <h4 class="text-xs font-extrabold text-brand-navy uppercase tracking-wider">BIN Certificate (Mushak-2.3)</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">BIN Number</label>
+                            <input type="text" id="input-bin-no" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">BIN Issue Date</label>
+                            <input type="text" id="input-bin-issue" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIN Details -->
+                <div class="space-y-3 pt-3 border-t border-slate-100">
+                    <h4 class="text-xs font-extrabold text-brand-navy uppercase tracking-wider">TIN Certificate Details</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">TIN Number</label>
+                            <input type="text" id="input-tin-no" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600">TIN Reg Date</label>
+                            <input type="text" id="input-tin-date" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-bold text-slate-600">Taxes Circle & Zone</label>
+                            <input type="text" id="input-tin-circle" class="w-full text-xs p-2.5 border rounded-lg focus:border-brand-orange">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end gap-3 pt-4 border-t border-slate-100">
+                    <button type="button" onclick="toggleEditModal()" class="px-4 py-2 text-xs font-bold text-slate-600 hover:bg-slate-100 rounded-lg">Cancel</button>
+                    <button type="submit" class="px-6 py-2 bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold rounded-lg shadow">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic & Dynamic Local Storage System -->
+    <script>
+        // Initial Default Data Object Extracted Directly From Government PDF Credentials
+        const defaultDocData = {
+            ownerName: "MD. RUHUL AMIN",
+            phone: "01815592256",
+            address: "9/A, Toynbee Circular Road, Motijheel, Comm. Area, Motijheel PS, Dhaka-1000, Bangladesh",
+            tradeNo: "TRAD/DSCC/000033/2024",
+            tradeNid: "3701711263",
+            tradeIssue: "07/07/2026",
+            tradeValidity: "Valid till June 30, 2027",
+            binNo: "006287637-0202",
+            binIssue: "08/08/2024",
+            tinNo: "846173743066",
+            tinDate: "October 25, 2016",
+            tinCircle: "Taxes Circle-013 (Salary), Taxes Zone Narayanganj"
+        };
+
+        let currentDocData = { ...defaultDocData };
+
+        // Load persisted state if available
+        function loadStoredDocData() {
+            try {
+                const saved = localStorage.getItem('sinin_doc_data');
+                if (saved) {
+                    currentDocData = JSON.parse(saved);
+                }
+            } catch (e) {
+                console.error("Local Storage not accessible", e);
+            }
+            renderDocData();
+        }
+
+        // Render current data to DOM elements
+        function renderDocData() {
+            // Owner & Address
+            setText('display-owner-name', currentDocData.ownerName);
+            setText('doc-trade-owner', currentDocData.ownerName);
+            setText('doc-tin-taxpayer', currentDocData.ownerName);
+            setText('display-office-address', currentDocData.address);
+            setText('doc-bin-address', currentDocData.address);
+            setText('contact-address-display', currentDocData.address);
+
+            // Phone
+            setText('doc-trade-phone', currentDocData.phone);
+            setText('contact-phone-display', currentDocData.phone);
+
+            // Trade License
+            setText('doc-trade-no', currentDocData.tradeNo);
+            setText('hero-lic-display', currentDocData.tradeNo);
+            setText('footer-lic', currentDocData.tradeNo);
+            setText('doc-trade-nid', currentDocData.tradeNid);
+            setText('doc-trade-issue', currentDocData.tradeIssue);
+            setText('doc-trade-validity', currentDocData.tradeValidity);
+
+            // BIN
+            setText('doc-bin-no', currentDocData.binNo);
+            setText('hero-bin-display', currentDocData.binNo);
+            setText('footer-bin', currentDocData.binNo);
+            setText('doc-bin-issue', currentDocData.binIssue);
+
+            // TIN
+            setText('doc-tin-no', currentDocData.tinNo);
+            setText('doc-bin-etin', currentDocData.tinNo);
+            setText('hero-tin-display', currentDocData.tinNo);
+            setText('doc-tin-date', currentDocData.tinDate);
+            setText('doc-tin-circle', currentDocData.tinCircle);
+        }
+
+        function setText(id, value) {
+            const el = document.getElementById(id);
+            if (el) el.innerText = value;
+        }
+
+        // Tab Switcher
+        function switchDocTab(tabKey) {
+            const tabs = ['trade', 'bin', 'tin'];
+            tabs.forEach(t => {
+                const contentEl = document.getElementById(`tab-content-${t}`);
+                const btnEl = document.getElementById(`tab-btn-${t}`);
+                
+                if (t === tabKey) {
+                    contentEl.classList.remove('hidden');
+                    contentEl.classList.add('block');
+                    btnEl.classList.add('border-brand-orange', 'text-brand-orange');
+                    btnEl.classList.remove('border-transparent', 'text-slate-500');
+                } else {
+                    contentEl.classList.remove('block');
+                    contentEl.classList.add('hidden');
+                    btnEl.classList.remove('border-brand-orange', 'text-brand-orange');
+                    btnEl.classList.add('border-transparent', 'text-slate-500');
+                }
+            });
+        }
+
+        // Edit Modal Controls
+        function toggleEditModal() {
+            const modal = document.getElementById('edit-modal');
+            if (modal.classList.contains('hidden')) {
+                // Populate inputs with current data
+                document.getElementById('input-owner-name').value = currentDocData.ownerName;
+                document.getElementById('input-phone').value = currentDocData.phone;
+                document.getElementById('input-address').value = currentDocData.address;
+                document.getElementById('input-trade-no').value = currentDocData.tradeNo;
+                document.getElementById('input-trade-nid').value = currentDocData.tradeNid;
+                document.getElementById('input-trade-issue').value = currentDocData.tradeIssue;
+                document.getElementById('input-trade-validity').value = currentDocData.tradeValidity;
+                document.getElementById('input-bin-no').value = currentDocData.binNo;
+                document.getElementById('input-bin-issue').value = currentDocData.binIssue;
+                document.getElementById('input-tin-no').value = currentDocData.tinNo;
+                document.getElementById('input-tin-date').value = currentDocData.tinDate;
+                document.getElementById('input-tin-circle').value = currentDocData.tinCircle;
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+
+        function saveDocData(e) {
+            e.preventDefault();
+            currentDocData = {
+                ownerName: document.getElementById('input-owner-name').value,
+                phone: document.getElementById('input-phone').value,
+                address: document.getElementById('input-address').value,
+                tradeNo: document.getElementById('input-trade-no').value,
+                tradeNid: document.getElementById('input-trade-nid').value,
+                tradeIssue: document.getElementById('input-trade-issue').value,
+                tradeValidity: document.getElementById('input-trade-validity').value,
+                binNo: document.getElementById('input-bin-no').value,
+                binIssue: document.getElementById('input-bin-issue').value,
+                tinNo: document.getElementById('input-tin-no').value,
+                tinDate: document.getElementById('input-tin-date').value,
+                tinCircle: document.getElementById('input-tin-circle').value
+            };
+
+            try {
+                localStorage.setItem('sinin_doc_data', JSON.stringify(currentDocData));
+            } catch (err) {
+                console.error("Failed saving to LocalStorage", err);
+            }
+
+            renderDocData();
+            toggleEditModal();
+        }
+
+        function resetDocData() {
+            currentDocData = { ...defaultDocData };
+            try {
+                localStorage.removeItem('sinin_doc_data');
+            } catch (e) {}
+            renderDocData();
+        }
+
+        // Mobile Nav Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Form Submit Handler
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const msg = document.getElementById('form-success-msg');
+            msg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                msg.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            loadStoredDocData();
+        };
+    </script>
+</body>
+</html>
